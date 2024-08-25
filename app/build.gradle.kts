@@ -70,6 +70,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    implementation(libs.material)
+
     // Splash API
     implementation(libs.androidx.core.splashscreen)
 
@@ -81,7 +83,7 @@ dependencies {
 
     //Retrofit
     implementation (libs.retrofit)
-    implementation (libs.converter.name)
+    implementation (libs.converter.gson)
 
     //Compose Navigation
     implementation(libs.coil.compose)
