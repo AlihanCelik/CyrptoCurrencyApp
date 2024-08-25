@@ -30,7 +30,7 @@ fun onBoardingPage(
     Column(modifier=Modifier) {
         Image(painter = painterResource(id = page.image),
             contentDescription =null,
-            contentScale = ContentScale.Crop,
+
             modifier = modifier
                 .fillMaxWidth()
                 .fillMaxHeight(0.6f)
@@ -55,6 +55,6 @@ fun onBoardingPage(
 @Composable
 fun onBoardingPagePreview(){
     CyrptoCurrencyAppTheme {
-        onBoardingPage(page =Page(title = "alihan", description = "bbbbbb", image = R.drawable.picture1) )
+        onBoardingPage(page =Page(title = "alihan", description = "bbbbbb", image = R.drawable.bitcoin) )
     }
 }
