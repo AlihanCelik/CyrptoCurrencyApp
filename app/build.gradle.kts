@@ -5,7 +5,6 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("kotlin-parcelize")
 }
-
 android {
     namespace = "com.example.cyrptocurrencyapp"
     compileSdk = 34
