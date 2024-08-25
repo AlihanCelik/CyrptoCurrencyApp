@@ -70,6 +70,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+
+
     implementation(libs.material)
 
     // Splash API
@@ -89,6 +91,7 @@ dependencies {
     implementation(libs.coil.compose)
 
     implementation(libs.androidx.datastore.preferences)
+    implementation (libs.androidx.datastore.core)
 
     //Compose Foundation
     implementation (libs.androidx.foundation)

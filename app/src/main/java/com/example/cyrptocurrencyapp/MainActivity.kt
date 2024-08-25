@@ -13,6 +13,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.example.cyrptocurrencyapp.presentation.onboarding.OnBoardingScreen
+import com.example.cyrptocurrencyapp.presentation.onboarding.OnBoardingViewModel
+import com.example.cyrptocurrencyapp.presentation.onboarding.onBoardingEvent
 import com.example.cyrptocurrencyapp.ui.theme.CyrptoCurrencyAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -22,15 +25,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        installSplashScreen().apply {
-            setKeepOnScreenCondition{
-                viewModel.splashCondition
-            }
-        }
+        val viewModel2 by viewModels<OnBoardingViewModel>()
 
         setContent {
             CyrptoCurrencyAppTheme {
-
+                OnBoardingScreen(viewModel2::onEvent)
             }
         }
     }
