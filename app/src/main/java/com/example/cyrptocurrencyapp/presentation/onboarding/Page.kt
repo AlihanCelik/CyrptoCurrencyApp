@@ -12,14 +12,14 @@ val pages= listOf(
     Page(
         title = "Real-Time Crypto Market Updates",
         description ="Stay updated with the latest prices and market trends of cryptocurrencies. Don’t miss out on valuable opportunities!",
-        image = R.drawable.bitcoin)
+        image = R.drawable.bitcoin1)
     ,Page(
         title = "Save Your Favorite Cryptocurrencies",
         description ="Add your favorite cryptocurrencies to your favorites and access them easily. Keep track of the ones that matter most to you!",
-        image = R.drawable.cryptocurrency)
+        image = R.drawable.bitcoin2)
     ,Page(
         title = "Build Your Personal Crypto Portfolio",
-        description ="Create your own crypto portfolio and track your investments effortlessly. Make informed decisions with your personal insights.",
+        description ="Create your own crypto portfolio and track your investments effortlessly.Make informed decisions with your personal insights.",
         image = R.drawable.money_bag)
 )
 

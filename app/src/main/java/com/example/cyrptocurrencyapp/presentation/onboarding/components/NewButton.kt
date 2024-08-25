@@ -1,5 +1,6 @@
 package com.example.cyrptocurrencyapp.presentation.onboarding.components
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -19,7 +20,8 @@ fun NewButton(
     text:String,
     onClick:()->Unit
 ){
-    Button(onClick=onClick, colors = ButtonDefaults.buttonColors(
+    Button(
+        modifier = Modifier.padding(start = 10.dp), onClick=onClick, colors = ButtonDefaults.buttonColors(
         contentColor = Color.White,
         containerColor = MaterialTheme.colorScheme.primary),
         shape = RoundedCornerShape(size = 6.dp)

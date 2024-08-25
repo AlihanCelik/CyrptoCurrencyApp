@@ -28,10 +28,12 @@ fun onBoardingPage(
     page: Page
 ){
     Column(modifier=Modifier) {
-        Image(painter = painterResource(id = page.image),
+        Image(
+             painter = painterResource(id = page.image),
             contentDescription =null,
 
             modifier = modifier
+                .padding(start = 10.dp, end = 10.dp)
                 .fillMaxWidth()
                 .fillMaxHeight(0.6f)
             )
@@ -42,7 +44,7 @@ fun onBoardingPage(
             color = colorResource(id = R.color.display_small)
         )
         Text(text = page.description,
-            modifier=modifier.padding(horizontal = MediumPadding2),
+            modifier=modifier.padding(horizontal = MediumPadding2).padding(top = 5.dp),
             style = MaterialTheme.typography.bodyMedium,
             color= colorResource(id = R.color.text_medium)
         )
